@@ -1,0 +1,26 @@
+.btn {
+  background-color: #FB8F1D;
+  border-radius: 8px;
+  border: 1px solid #FB8F1D;
+  color: white;
+}
+.btn:hover, .btn:focus {
+  outline: none;
+  background-color: #1ABE84;
+  border: 1px solid #1ABE84;
+}
+
+.title {
+  font-size: 36px;
+  font-family: Playfair Display;
+  font-weight: 700;
+  line-height: 1.39; /* 50/36 */
+}
+
+.text {
+  font-family: Mulish;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px; 
+  color: #7D7987;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,37 @@
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="container header__container">
+      <a href="./index.html" class="header__logo" aria-label="Home">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="logo">
+            <g id="logo_2">
+              <circle id="Ellipse 1" cx="20.5" cy="20.5" r="20.5" fill="#1ABE84" />
+            </g>
+            <circle id="Ellipse 2" cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3" />
+          </g>
+        </svg>
+      </a>
+      <button class="header__burger burger"><span></span></button>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li><a href="./index.html" class="menu__link" data-checked>Home</a></li>
+          <li><a href="" class="menu__link">Destinations</a></li>
+          <li><a href="" class="menu__link">About</a></li>
+          <li><a href="" class="menu__link">Partner</a></li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button class="btn header-login">Login</button>
+        <button class="btn header-register">Register</button>
+      </div>
+    </div>
+  </header>
+
   <script type="module" src="./js/script.js"></script>
 </body>
+
 </html>
