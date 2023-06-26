@@ -100,9 +100,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+  flex-wrap: wrap;
   transition: all 0.2s ease 0s;
 }
 .menu__link {
+  display: block;
 	padding: 10px 17px;
 	font-family: "Inter";
 	font-size: 16px;
@@ -129,8 +131,7 @@
     flex-direction: column;
     row-gap: 20px;
     justify-content: center;
-  }
-  .menu__link {
+    overflow: scroll;
   }
   .menu.active .menu__list {
     left: 0;
