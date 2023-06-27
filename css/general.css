@@ -2,7 +2,12 @@
   overflow: hidden;
 }
 
+.container {
+  padding: 0 calc(15px + 225 * ((100vw - 768px) / (1600 - 768)));
+}
+
 .btn {
+  display: block;
   background-color: #FB8F1D;
   border-radius: 8px;
   border: 1px solid #FB8F1D;
@@ -27,4 +32,8 @@
   font-weight: 300;
   line-height: 30px; 
   color: #7D7987;
+}
+
+@media (max-width: 767.98px) {
+  .container {padding: 0;}
 }
