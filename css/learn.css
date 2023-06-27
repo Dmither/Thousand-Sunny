@@ -51,7 +51,10 @@
     padding-top: 0;
     padding-left: 10px;
     padding-right: 0px;
+  }
+  .learn__title {
+    margin-bottom: 10px;
     text-align: center;
   }
-  .title {margin-bottom: 10px;}
+  .learn__text {margin-bottom: 20px;}
 }
