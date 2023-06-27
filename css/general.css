@@ -33,7 +33,17 @@
   line-height: 30px; 
   color: #7D7987;
 }
+.link {
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 600;
+  color: #FB8F1D;
+}
+.link:hover, .link:focus {
+  color: #1ABE84;
+}
 
 @media (max-width: 767.98px) {
-  .container {padding: 0;}
+  .container {padding: 0 15px;}
+  .link {font-size: 14px;}
 }

@@ -1,5 +1,5 @@
 .learn {
-  margin-bottom: calc(20px + 272 * ((100vw - 320px) / (1600 - 320)));
+  margin-bottom: calc(30px + 262 * ((100vw - 320px) / (1600 - 320)));
 }
 .learn__container {
   display: flex;

@@ -1,5 +1,5 @@
 .hero {
-	margin-bottom: calc(20px + 266 * (100vw - 320px) / (1600 - 320));
+	margin-bottom: calc(30px + 256 * (100vw - 320px) / (1600 - 320));
 }
 .container {
 }
