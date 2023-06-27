@@ -6,7 +6,8 @@
   align-items: center;
 }
 .guides__content {
-  flex: 0 0 50%
+  flex: 0 0 50%;
+  padding-right: calc(40px + 40 * (100vw - 768px) / (1600 - 768));
 }
 .guides__title {
   margin-bottom: calc(10px + 10 * (100vw - 768px) / (1600 - 768));
@@ -26,7 +27,8 @@
   font-weight: 600;
 }
 .guides__img {
-  flex: 0 0 50%;
+  margin-right: -9px;
+  margin-left: -10px;
   background-image: url(../img/guides.webp);
   background-position: center;
   background-size: contain;
@@ -35,6 +37,7 @@
 }
 @media (max-width: 767.98px) {
   .guides__container {display: block;}
+  .guides__content {padding-right: 0;}
   .guides__title {
     margin-bottom: 10px;
     text-align: center;
