@@ -12,7 +12,8 @@
 .testimonials__card {
 	display: flex;
 	align-items: center;
-	columb-gap: 20px;
+	-moz-column-gap: 20px;
+	     column-gap: 20px;
 }
 testimonials__card-content {
 }
