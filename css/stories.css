@@ -1,0 +1,110 @@
+.stories {
+	margin-bottom: calc(30px + 241 * (100vw - 320px) / (1600 - 320));
+}
+.stories__container {
+	display: grid;
+	grid-template-columns: 1fr 90px;
+}
+.stories__title {
+	margin-bottom: calc(20px + 36 * (100vw - 768px) / (1600 - 768));
+}
+.stories__link {
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 11px;
+	column-gap: 11px;
+	font-size: 17px;
+	line-height: 3.5;
+	position: relative;
+}
+.stories__link:hover path,
+.stories__link:focus path {
+	stroke: #1abe84;
+}
+.stories__cards {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: calc(15px + 10 * ((100vw - 768px) / (1600 - 768)));
+}
+.stories__card {
+	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+	width: 100%;
+}
+.stories-img {
+	margin-bottom: 13px;
+	aspect-ratio: 1 / 0.88;
+	overflow: hidden;
+  position: relative;
+}
+.stories-img img {
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+}
+.stories__story-name {
+	margin-bottom: 13px;
+  color: #000;
+  font-size: 19px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.58; 
+}
+.stories__text {
+	margin-bottom: 13px;
+  color: #7D7987;
+  font-size: 15px;
+  font-family: Inter;
+  line-height: 26px; 
+  max-height: 78px;
+  overflow: hidden;
+}
+.stories__link {
+  color: #FB8F1D;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 1.87; 
+}
+.stories__card:hover .stories-img::after,
+.stories__card:focus .stories-img::after  {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1abe84;
+  opacity: 0.5;
+}
+.stories__card:hover .stories__link,
+.stories__card:focus .stories__link {
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .stories__title {
+    margin-bottom: 20px;
+  }
+  .stories__link {
+    font-size: 16px;
+  }
+  .stories__cards {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .stories-img {
+    margin-bottom: 0;
+  }
+  .stories__story-name {
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+  .stories__text {
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+}
