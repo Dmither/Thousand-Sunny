@@ -1,0 +1,126 @@
+.testimonials {
+	margin-bottom: calc(30px + 255 * (100vw - 320px) / (1600 - 320));
+}
+.testimonials__container {
+	position: relative;
+}
+.testimonials__title {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.testimonials__card {
+	display: flex;
+	align-items: center;
+	columb-gap: 20px;
+}
+testimonials__card-content {
+}
+.testimonials__rate {
+	margin-bottom: calc(10px + 20 * (100vw - 320px) / (1600 - 320));
+	display: flex;
+	align-items: flex-start;
+}
+.testimonials__rate div {
+	width: 41px;
+	height: 24px;
+	background-image: url(../img/star.svg);
+	background-repeat: no-repeat;
+}
+.testimonials__text {
+	margin-bottom: 40px;
+	max-width: 450px;
+	font-family: "Mulish";
+	font-size: calc(16px + 8 * (100vw - 320px) / (1600 - 320));
+	line-height: 1.5;
+	color: #000;
+}
+.testimonials__author {
+	font-family: Inter;
+	font-size: calc(15px + 7 * (100vw - 320px) / (1600 - 320));
+	font-weight: 700;
+	line-height: 2.18;
+	color: #000;
+}
+.testimonials__position {
+	font-size: calc(14px + 4 * (100vw - 320px) / (1600 - 320));
+	font-family: Inter;
+	line-height: 2.66;
+	color: rgba(0, 0, 0, 0.85);
+}
+.testimonials__img source,
+.testimonials__img img {
+	width: 384px;
+	height: 491px;
+	border-radius: 14px;
+	overflow: hidden;
+}
+.testimonials__btns {
+	padding: 30px 0 0 20px;
+	border-radius: 16px 0 0 0;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	-moz-column-gap: 22px;
+	column-gap: 22px;
+}
+.testimonials__btns button {
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+  cursor:auto;
+}
+.testimonials-disabled path,
+.testimonials-disabled circle {
+	stroke: #d7d7d7;
+}
+.testimonials__left {
+	transform: rotate(180deg);
+}
+.testimonials__right {
+}
+.testimonials__btns .testimonials-active {
+  cursor: pointer;
+}
+.testimonials__btns .testimonials-active:hover path,
+.testimonials__btns .testimonials-active:focus path,
+.testimonials__btns .testimonials-active:hover circle,
+.testimonials__btns .testimonials-active:focus circle {
+  stroke: #1ABE84;
+}
+@media (max-width: 767.98px) {
+	.testimonials__title {
+		position: relative;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.testimonials__card {
+		flex-direction: column;
+		text-align: center;
+	}
+	.testimonials__img {
+		display: block;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+		margin: 0 auto;
+	}
+	.testimonials__rate {
+		justify-content: center;
+	}
+	.testimonials__text {
+		margin: 0 auto;
+	}
+	.testimonials__author,
+	.testimonials__position {
+		line-height: 2;
+	}
+	.testimonials__img source,
+	.testimonials__img img {
+		width: 100%;
+		max-width: 290px;
+		height: auto;
+	}
+}
